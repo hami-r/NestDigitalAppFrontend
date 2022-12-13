@@ -18,6 +18,8 @@ import { AddSecurityguardComponent } from './add-securityguard/add-securityguard
 import { ViewSecurityguardComponent } from './view-securityguard/view-securityguard.component';
 import { ViewAllLeavesComponent } from './view-all-leaves/view-all-leaves.component';
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
+import { ViewAllLogsComponent } from './view-all-logs/view-all-logs.component';
+import { ViewLogsByDateComponent } from './view-logs-by-date/view-logs-by-date.component';
 
 let myRoutes:Routes = [
   {
@@ -59,6 +61,14 @@ let myRoutes:Routes = [
   {
     path:"applyLeave",
     component:ApplyLeaveComponent
+  },
+  {
+    path:"viewAllLogs",
+    component:ViewAllLogsComponent
+  },
+  {
+    path:"viewLogsDate",
+    component:ViewLogsByDateComponent
   }
 
 ]
@@ -77,7 +87,9 @@ let myRoutes:Routes = [
     AddSecurityguardComponent,
     ViewSecurityguardComponent,
     ViewAllLeavesComponent,
-    ApplyLeaveComponent
+    ApplyLeaveComponent,
+    ViewAllLogsComponent,
+    ViewLogsByDateComponent
   ],
   imports: [
     BrowserModule,
