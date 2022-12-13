@@ -13,6 +13,7 @@ import { SecurityLoginComponent } from './security-login/security-login.componen
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ViewEmployeesComponent } from './view-employees/view-employees.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 
 let myRoutes:Routes = [
   {
@@ -22,9 +23,22 @@ let myRoutes:Routes = [
   {
     path:"empLogin",
     component:EmployeeLoginComponent
-  },{
+  },
+  {
     path:"secLogin",
     component:SecurityLoginComponent
+  },
+  {
+    path:"addEmp",
+    component:AddEmployeeComponent
+  },
+  {
+    path:"viewEmp",
+    component:ViewEmployeesComponent
+  },
+  {
+    path:"searchEmp",
+    component:SearchEmployeeComponent
   }
 
 ]
@@ -38,7 +52,8 @@ let myRoutes:Routes = [
     SecurityLoginComponent,
     AddEmployeeComponent,
     ViewEmployeesComponent,
-    SearchEmployeeComponent
+    SearchEmployeeComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
