@@ -34,8 +34,14 @@
               <li><a class="dropdown-item" routerLink="/applyLeave">Pending Leaves</a></li>
             </ul>
           </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link active" aria-current="page" routerLink="/">Logs</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Logs
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/viewAllLogs">View All</a></li>
+              <li><a class="dropdown-item" routerLink="/viewLogsDate">Logs By Date</a></li>
+            </ul>
           </li>
         </ul>
       </div>
