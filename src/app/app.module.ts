@@ -9,12 +9,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
 
 let myRoutes:Routes = [
   {
     path:"",
     component:AdminLoginComponent
+  },
+  {
+    path:"empLogin",
+    component:EmployeeLoginComponent
+  },{
+    path:"secLogin",
+    component:SecurityLoginComponent
   }
+
 ]
 
 @NgModule({
@@ -22,7 +31,8 @@ let myRoutes:Routes = [
     AppComponent,
     HomeNavbarComponent,
     AdminLoginComponent,
-    EmployeeLoginComponent
+    EmployeeLoginComponent,
+    SecurityLoginComponent
   ],
   imports: [
     BrowserModule,
