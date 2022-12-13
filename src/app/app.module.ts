@@ -14,6 +14,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ViewEmployeesComponent } from './view-employees/view-employees.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { AddSecurityguardComponent } from './add-securityguard/add-securityguard.component';
+import { ViewSecurityguardComponent } from './view-securityguard/view-securityguard.component';
 
 let myRoutes:Routes = [
   {
@@ -39,6 +41,14 @@ let myRoutes:Routes = [
   {
     path:"searchEmp",
     component:SearchEmployeeComponent
+  },
+  {
+    path:"addSecGuard",
+    component:AddSecurityguardComponent
+  },
+  {
+    path:"viewSecGuard",
+    component:ViewSecurityguardComponent
   }
 
 ]
@@ -53,7 +63,9 @@ let myRoutes:Routes = [
     AddEmployeeComponent,
     ViewEmployeesComponent,
     SearchEmployeeComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    AddSecurityguardComponent,
+    ViewSecurityguardComponent
   ],
   imports: [
     BrowserModule,

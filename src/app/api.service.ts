@@ -36,4 +36,12 @@ export class ApiService {
     return this.http.post("http://localhost:8080/editEmp",sendData)
   }
 
+  addSecGuard = (sendData:any) =>{
+    return this.http.post("http://localhost:8080/addSec",sendData)
+  }
+
+  viewSecGuard = () => {
+    return this.http.get("http://localhost:8080/viewSec")
+  }
+
 }
