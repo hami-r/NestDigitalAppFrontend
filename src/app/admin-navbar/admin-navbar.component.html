@@ -25,8 +25,14 @@
               <li><a class="dropdown-item" routerLink="/viewSecGuard">View</a></li>
             </ul>
           </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link active" aria-current="page" routerLink="/">LMS</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" routerLink="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Leave
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/viewAllLeaves">View All</a></li>
+              <li><a class="dropdown-item" routerLink="/applyLeave">Pending Leaves</a></li>
+            </ul>
           </li>
           <li class="nav-item mx-3">
             <a class="nav-link active" aria-current="page" routerLink="/">Logs</a>

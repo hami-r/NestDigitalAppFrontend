@@ -1,0 +1,34 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="container">
+    <div class="row ">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table table-striped text-center mt-3">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Remarks</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>AppliedOn</th>
+                        <th>AppliedBy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i of data">
+                        <td>{{i.title}}</td>
+                        <td>{{i.remarks}}</td>
+                        <td>{{i.type}}</td>
+                        <td>{{i.status}}</td>
+                        <td>{{i.from_date}}</td>
+                        <td>{{i.to_date}}</td>
+                        <td>{{i.applied_date}}</td>
+                        <td>{{i.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> 

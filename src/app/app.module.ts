@@ -16,6 +16,8 @@ import { SearchEmployeeComponent } from './search-employee/search-employee.compo
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { AddSecurityguardComponent } from './add-securityguard/add-securityguard.component';
 import { ViewSecurityguardComponent } from './view-securityguard/view-securityguard.component';
+import { ViewAllLeavesComponent } from './view-all-leaves/view-all-leaves.component';
+import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 
 let myRoutes:Routes = [
   {
@@ -49,6 +51,14 @@ let myRoutes:Routes = [
   {
     path:"viewSecGuard",
     component:ViewSecurityguardComponent
+  },
+  {
+    path:"viewAllLeaves",
+    component:ViewAllLeavesComponent
+  },
+  {
+    path:"applyLeave",
+    component:ApplyLeaveComponent
   }
 
 ]
@@ -65,7 +75,9 @@ let myRoutes:Routes = [
     SearchEmployeeComponent,
     AdminNavbarComponent,
     AddSecurityguardComponent,
-    ViewSecurityguardComponent
+    ViewSecurityguardComponent,
+    ViewAllLeavesComponent,
+    ApplyLeaveComponent
   ],
   imports: [
     BrowserModule,

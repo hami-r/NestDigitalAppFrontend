@@ -44,4 +44,14 @@ export class ApiService {
     return this.http.get("http://localhost:8080/viewSec")
   }
 
+  viewAllLeaves = () => {
+    return this.http.get("http://localhost:8080/viewAllLeaves")
+  }
+
+  viewAllPendingLeaves = () => {
+    return this.http.get("http://localhost:8080/viewAllPendingLeaves")
+  }
+
+  
+
 }
