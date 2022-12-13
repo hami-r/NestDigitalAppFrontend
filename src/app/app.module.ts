@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { ViewEmployeesComponent } from './view-employees/view-employees.component';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 
 let myRoutes:Routes = [
   {
@@ -32,7 +35,10 @@ let myRoutes:Routes = [
     HomeNavbarComponent,
     AdminLoginComponent,
     EmployeeLoginComponent,
-    SecurityLoginComponent
+    SecurityLoginComponent,
+    AddEmployeeComponent,
+    ViewEmployeesComponent,
+    SearchEmployeeComponent
   ],
   imports: [
     BrowserModule,
