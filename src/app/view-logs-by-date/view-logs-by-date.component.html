@@ -1,0 +1,69 @@
+
+<app-admin-navbar></app-admin-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 m-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Date</label>
+                    <input name="date" [(ngModel)]="date" type="date" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="byDate()" class="btn btn-dark">Submit</button>
+                </div>
+            </div>
+            <div class="row g-2">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <table class="table table-striped text-center mt-3">
+                    <thead>
+                        <tr *ngIf="hide">
+                            <th>Name</th>
+                            <th>Purpose</th>
+                            <th>Whom To Met</th>
+                            <th>EntryTime</th>
+                            <th>ExitTime</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let i of empData">
+                            <td>{{i.name}}</td>
+                            <td>{{i.purpose}}</td>
+                            <td>{{i.whom_to_meet}}</td>
+                            <td>{{i.entry_time}}</td>
+                            <td>{{i.exit_time}}</td>
+                            <td>{{i.date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <table class="table table-striped text-center mt-3">
+                    <thead>
+                        <tr *ngIf="hide">
+                            <th>Name</th>
+                            <th>Purpose</th>
+                            <th>Whom To Met</th>
+                            <th>EntryTime</th>
+                            <th>ExitTime</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let i of visData">
+                            <td>{{i.name}}</td>
+                            <td>{{i.purpose}}</td>
+                            <td>{{i.whom_to_meet}}</td>
+                            <td>{{i.entry_time}}</td>
+                            <td>{{i.exit_time}}</td>
+                            <td>{{i.date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+           
+            </div>
+        </div>
+    </div>
+</div>

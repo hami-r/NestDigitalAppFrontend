@@ -52,6 +52,20 @@ export class ApiService {
     return this.http.get("http://localhost:8080/viewAllPendingLeaves")
   }
 
-  
+  viewAllEmpLogs = () => {
+    return this.http.get("http://localhost:8080/viewAllEmpLogs")
+  }
+
+  viewAllVisLogs = () => {
+    return this.http.get("http://localhost:8080/viewAllVisLogs")
+  }
+
+  viewEmpLogsDate = (sendData:any) => {
+    return this.http.post("http://localhost:8080/viewEmpLogsOnDate",sendData)
+  }
+
+  viewVisLogsDate = (sendData:any) => {
+    return this.http.post("http://localhost:8080/viewVisLogsOnDate",sendData)
+  }
 
 }
