@@ -68,4 +68,11 @@ export class ApiService {
     return this.http.post("http://localhost:8080/viewVisLogsOnDate",sendData)
   }
 
+  viewEmpProfile = (sendData:any) => {
+    return this.http.post("http://localhost:8080/viewEmpProfile",sendData)
+  }
+  
+  viewSecGuardProfile = (sendData:any) => {
+    return this.http.post("http://localhost:8080/viewSecProfile",sendData)
+  }
 }

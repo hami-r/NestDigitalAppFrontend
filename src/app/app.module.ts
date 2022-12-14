@@ -20,6 +20,8 @@ import { ViewAllLeavesComponent } from './view-all-leaves/view-all-leaves.compon
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { ViewAllLogsComponent } from './view-all-logs/view-all-logs.component';
 import { ViewLogsByDateComponent } from './view-logs-by-date/view-logs-by-date.component';
+import { ViewProfileEmpComponent } from './view-profile-emp/view-profile-emp.component';
+import { ViewProfileSecGuardComponent } from './view-profile-sec-guard/view-profile-sec-guard.component';
 
 let myRoutes:Routes = [
   {
@@ -69,6 +71,14 @@ let myRoutes:Routes = [
   {
     path:"viewLogsDate",
     component:ViewLogsByDateComponent
+  },
+  {
+    path:"viewEmpProfile",
+    component:ViewProfileEmpComponent
+  },
+  {
+    path:"viewSecGuardProfile",
+    component:ViewProfileSecGuardComponent
   }
 
 ]
@@ -89,7 +99,9 @@ let myRoutes:Routes = [
     ViewAllLeavesComponent,
     ApplyLeaveComponent,
     ViewAllLogsComponent,
-    ViewLogsByDateComponent
+    ViewLogsByDateComponent,
+    ViewProfileEmpComponent,
+    ViewProfileSecGuardComponent
   ],
   imports: [
     BrowserModule,
