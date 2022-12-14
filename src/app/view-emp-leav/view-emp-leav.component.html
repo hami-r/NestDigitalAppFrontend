@@ -1,0 +1,32 @@
+<app-employee-navbar></app-employee-navbar>
+
+<div class="container">
+    <div class="row ">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table table-striped text-center mt-3">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Remarks</th>
+                        <th>Type</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>AppliedOn</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i of fetchedData">
+                        <td>{{i.title}}</td>
+                        <td>{{i.remarks}}</td>
+                        <td>{{i.type}}</td>
+                        <td>{{i.fromDate}}</td>
+                        <td>{{i.toDate}}</td>
+                        <td>{{i.appliedDate}}</td>
+                        <td>{{i.status}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> 

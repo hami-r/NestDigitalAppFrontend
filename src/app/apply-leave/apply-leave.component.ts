@@ -15,4 +15,11 @@ export class ApplyLeaveComponent {
     )
   }
   data:any = []
+  acceptBtn = (id:any) => {
+
+  }
+
+  rejectBtn = (id:any) => {
+
+  }
 }

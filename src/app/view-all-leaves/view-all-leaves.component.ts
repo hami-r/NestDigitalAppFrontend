@@ -16,11 +16,5 @@ export class ViewAllLeavesComponent {
   }
   data:any = []
   
-  acceptBtn = (id:any) => {
-
-  }
-
-  rejectBtn = (id:any) => {
-
-  }
+ 
 }
