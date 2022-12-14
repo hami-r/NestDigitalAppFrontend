@@ -22,6 +22,9 @@ import { ViewAllLogsComponent } from './view-all-logs/view-all-logs.component';
 import { ViewLogsByDateComponent } from './view-logs-by-date/view-logs-by-date.component';
 import { ViewProfileEmpComponent } from './view-profile-emp/view-profile-emp.component';
 import { ViewProfileSecGuardComponent } from './view-profile-sec-guard/view-profile-sec-guard.component';
+import { EmpApplyLeaveComponent } from './emp-apply-leave/emp-apply-leave.component';
+import { ViewEmpLeavComponent } from './view-emp-leav/view-emp-leav.component';
+import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
 
 let myRoutes:Routes = [
   {
@@ -79,6 +82,14 @@ let myRoutes:Routes = [
   {
     path:"viewSecGuardProfile",
     component:ViewProfileSecGuardComponent
+  },
+  {
+    path:"applyLeaveEmp",
+    component:EmpApplyLeaveComponent
+  },
+  {
+    path:"viewEmpLeave",
+    component:ViewEmpLeavComponent
   }
 
 ]
@@ -101,7 +112,10 @@ let myRoutes:Routes = [
     ViewAllLogsComponent,
     ViewLogsByDateComponent,
     ViewProfileEmpComponent,
-    ViewProfileSecGuardComponent
+    ViewProfileSecGuardComponent,
+    EmpApplyLeaveComponent,
+    ViewEmpLeavComponent,
+    EmployeeNavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -75,4 +75,14 @@ export class ApiService {
   viewSecGuardProfile = (sendData:any) => {
     return this.http.post("http://localhost:8080/viewSecProfile",sendData)
   }
+
+  applyLeave = (sendData:any) => {
+    return this.http.post("http://localhost:8080/applyLeave",sendData)
+  }
+  
+  LeaveStatusEmp = (sendData:any) => {
+    return this.http.post("http://localhost:8080/viewLeaveStatus",sendData)
+  }
+
+
 }
