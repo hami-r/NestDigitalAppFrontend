@@ -20,8 +20,9 @@ export class SecurityLoginComponent {
     console.log(data);
     this.api.securityGuardLogin(data).subscribe(
       (response:any) => {
+        localStorage.setItem("secId",response.secId)
         if(response.status == "success"){
-          this.route.navigate([''])
+          this.route.navigate(['/viewSecGuardProfile'])
         }else {
           alert("Invalid credentials")
         }
