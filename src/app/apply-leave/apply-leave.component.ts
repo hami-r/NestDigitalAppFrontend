@@ -41,6 +41,7 @@ export class ApplyLeaveComponent {
         console.log(response);
         if(response.status=="success"){
           alert("Leave Accepted")
+          location.reload()
         }else{
           alert("Something went wrong")
         }
