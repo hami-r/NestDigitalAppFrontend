@@ -91,4 +91,8 @@ export class ApiService {
   EntryEmpLogs = (sendData:any) => {
     return this.http.post("http://localhost:8080/addEmployeeLogs",sendData)
   }
+
+  EntryVisLogs = (sendData:any) => {
+    return this.http.post("http://localhost:8080/addVisitorLogs",sendData)
+  }
 }

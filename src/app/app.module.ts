@@ -27,6 +27,7 @@ import { ViewEmpLeavComponent } from './view-emp-leav/view-emp-leav.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
 import { SecGuardNavbarComponent } from './sec-guard-navbar/sec-guard-navbar.component';
 import { EntryLogsComponent } from './entry-logs/entry-logs.component';
+import { EntryLogsVisComponent } from './entry-logs-vis/entry-logs-vis.component';
 
 let myRoutes:Routes = [
   {
@@ -96,6 +97,10 @@ let myRoutes:Routes = [
   {
     path:"EmpLogEntry",
     component:EntryLogsComponent
+  },
+  {
+    path:"VisLogEntry",
+    component:EntryLogsVisComponent
   }
 
 ]
@@ -123,7 +128,8 @@ let myRoutes:Routes = [
     ViewEmpLeavComponent,
     EmployeeNavbarComponent,
     SecGuardNavbarComponent,
-    EntryLogsComponent
+    EntryLogsComponent,
+    EntryLogsVisComponent
   ],
   imports: [
     BrowserModule,
