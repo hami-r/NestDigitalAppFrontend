@@ -26,6 +26,7 @@ import { EmpApplyLeaveComponent } from './emp-apply-leave/emp-apply-leave.compon
 import { ViewEmpLeavComponent } from './view-emp-leav/view-emp-leav.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
 import { SecGuardNavbarComponent } from './sec-guard-navbar/sec-guard-navbar.component';
+import { EntryLogsComponent } from './entry-logs/entry-logs.component';
 
 let myRoutes:Routes = [
   {
@@ -91,6 +92,10 @@ let myRoutes:Routes = [
   {
     path:"viewEmpLeave",
     component:ViewEmpLeavComponent
+  },
+  {
+    path:"EmpLogEntry",
+    component:EntryLogsComponent
   }
 
 ]
@@ -117,7 +122,8 @@ let myRoutes:Routes = [
     EmpApplyLeaveComponent,
     ViewEmpLeavComponent,
     EmployeeNavbarComponent,
-    SecGuardNavbarComponent
+    SecGuardNavbarComponent,
+    EntryLogsComponent
   ],
   imports: [
     BrowserModule,

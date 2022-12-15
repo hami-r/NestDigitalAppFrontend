@@ -87,5 +87,8 @@ export class ApiService {
   LeaveCountEmp = (sendData:any) => {
     return this.http.post("http://localhost:8080/viewLeaveCountEmp",sendData)
   }
-
+  
+  EntryEmpLogs = (sendData:any) => {
+    return this.http.post("http://localhost:8080/addEmployeeLogs",sendData)
+  }
 }
