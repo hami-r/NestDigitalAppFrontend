@@ -18,6 +18,16 @@ export class ViewEmpLeavComponent {
         this.fetchedData=response
       }
     )
+
+    api.LeaveCountEmp(data).subscribe(
+      (response:any) => {
+        console.log(response);
+        this.fetchedCount=response
+        this.total=response[0].casual+response[0].sick+response[0].special
+      }
+    )
   }
   fetchedData:any = []
+  fetchedCount:any = []
+  total = ""
 }

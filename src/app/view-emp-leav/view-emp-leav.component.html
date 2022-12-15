@@ -3,7 +3,27 @@
 <div class="container">
     <div class="row ">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <table class="table table-striped text-center mt-3">
+            <table class="table table-striped text-center mt-5">
+                <thead>
+                    <tr>
+                        <th>Casual</th>
+                        <th>Sick</th>
+                        <th>Special</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i of fetchedCount">
+                        <td>{{i.casual}}</td>
+                        <td>{{i.sick}}</td>
+                        <td>{{i.special}}</td>
+                        <td>{{total}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table table-striped text-center mt-5">
                 <thead>
                     <tr>
                         <th>Title</th>
@@ -28,5 +48,6 @@
                 </tbody>
             </table>
         </div>
+        
     </div>
 </div> 
