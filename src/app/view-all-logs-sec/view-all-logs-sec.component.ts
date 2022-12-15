@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-view-logs-by-date',
-  templateUrl: './view-logs-by-date.component.html',
-  styleUrls: ['./view-logs-by-date.component.css']
+  selector: 'app-view-all-logs-sec',
+  templateUrl: './view-all-logs-sec.component.html',
+  styleUrls: ['./view-all-logs-sec.component.css']
 })
-export class ViewLogsByDateComponent {
+export class ViewAllLogsSecComponent {
   constructor(private api:ApiService){}
   date = ""
   empData:any = []
   visData:any = []
-  visHide:boolean = false
   empHide:boolean = false
+  visHide:boolean = false
   byDate = () => {
     let data:any = {
       "date":this.date
