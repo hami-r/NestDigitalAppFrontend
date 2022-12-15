@@ -23,10 +23,54 @@
                         <td>{{i.phoneNo}}</td>
                         <td>{{i.designation}}</td>
                         <td>{{i.salary}}</td>
-                        <td><button (click)="deleteBtn(i.id)" class="btn-danger">Delete</button></td>
+                        <td><button (click)="deleteBtn(i.id)" class="btn btn-danger btn-sm me-2 rounded">Delete</button>
+                            <button (click)="editBtn(i)" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-warning btn-sm rounded text-white">Edit</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
 </div> 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Update Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row g-2">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Employee Code</label>
+                    <input name="employeeCode" [(ngModel)]="employeeUpdate.employeeCode" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Name</label>
+                    <input name="name" [(ngModel)]="employeeUpdate.name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Email</label>
+                    <input name="email" [(ngModel)]="employeeUpdate.email" type="email" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Phone No</label>
+                    <input name="phoneNo" [(ngModel)]="employeeUpdate.phoneNo" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Designation</label>
+                    <input name="designation" [(ngModel)]="employeeUpdate.designation" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Salary</label>
+                    <input name="salary" [(ngModel)]="employeeUpdate.salary" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mt-4">
+                    <button (click)="updateBtn(employeeUpdate.id)" class="btn btn-dark">Update</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
