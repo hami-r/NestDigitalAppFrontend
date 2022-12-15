@@ -27,11 +27,43 @@ export class ApplyLeaveComponent {
   data:any = []
   // total = 0
   // arr_names:any = []
-  acceptBtn = (id:any) => {
-
+  acceptBtn = (id:any,empId:any,type:any,fromDate:any,toDate:any) => {
+    let data = {
+      "id":id,
+      "empId":empId,
+      "fromDate":fromDate,
+      "toDate":toDate,
+      "type":type
+    }
+    console.log(data);
+    this.api.acceptLeave(data).subscribe(
+      (response:any) => {
+        console.log(response);
+        if(response.status=="success"){
+          alert("Leave Accepted")
+        }else{
+          alert("Something went wrong")
+        }
+      }
+    )
   }
 
   rejectBtn = (id:any) => {
-
+    let data = {
+      "id":id
+    }
+    console.log(data);
+    
+    this.api.rejectLeave(data).subscribe(
+      (response:any) => {
+        console.log(response);
+        if(response.status == "success"){
+          alert("Leave is rejected")
+          location.reload()
+        } else{
+          alert("Something went wrong")
+        }
+      }
+    )
   }
 }

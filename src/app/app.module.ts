@@ -25,6 +25,10 @@ import { ViewProfileSecGuardComponent } from './view-profile-sec-guard/view-prof
 import { EmpApplyLeaveComponent } from './emp-apply-leave/emp-apply-leave.component';
 import { ViewEmpLeavComponent } from './view-emp-leav/view-emp-leav.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
+import { SecGuardNavbarComponent } from './sec-guard-navbar/sec-guard-navbar.component';
+import { EntryLogsComponent } from './entry-logs/entry-logs.component';
+import { EntryLogsVisComponent } from './entry-logs-vis/entry-logs-vis.component';
+import { ViewAllLogsSecComponent } from './view-all-logs-sec/view-all-logs-sec.component';
 
 let myRoutes:Routes = [
   {
@@ -90,6 +94,18 @@ let myRoutes:Routes = [
   {
     path:"viewEmpLeave",
     component:ViewEmpLeavComponent
+  },
+  {
+    path:"EmpLogEntry",
+    component:EntryLogsComponent
+  },
+  {
+    path:"VisLogEntry",
+    component:EntryLogsVisComponent
+  },
+  {
+    path:"ViewLogsSec",
+    component:ViewAllLogsSecComponent
   }
 
 ]
@@ -115,7 +131,11 @@ let myRoutes:Routes = [
     ViewProfileSecGuardComponent,
     EmpApplyLeaveComponent,
     ViewEmpLeavComponent,
-    EmployeeNavbarComponent
+    EmployeeNavbarComponent,
+    SecGuardNavbarComponent,
+    EntryLogsComponent,
+    EntryLogsVisComponent,
+    ViewAllLogsSecComponent
   ],
   imports: [
     BrowserModule,

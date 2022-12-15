@@ -32,4 +32,32 @@ export class ViewEmployeesComponent {
       }
     )
   }
+
+  employeeUpdate:any = {
+    "employeeCode":"",
+    "name":"",
+    "designation":"",
+    "email":"",
+    "phoneNo":"",
+    "salary":"",
+    "id":""
+  }
+
+  editBtn = (emp:any) => {
+    this.employeeUpdate=emp
+  }
+
+  updateBtn = (id:any) => {
+    this.api.editEmployee(this.employeeUpdate).subscribe(
+      (response:any) => {
+        console.log(response);
+        if(response.status == "success"){
+          alert("Updated Successfully")
+          location.reload()
+        }else{
+          alert("Something went wrong")
+        }
+      }
+    )
+  }
 }
