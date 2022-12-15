@@ -33,8 +33,8 @@
                         <td>{{i.casual}}</td>
                         <td>{{i.sick}}</td>
                         <td>{{i.special}}</td>
-                        <td><button class="btn btn-sm btn-success me-2 rounded-pill">Accept</button>
-                            <button class="btn btn-sm btn-danger rounded-pill">Reject</button></td>
+                        <td><button (click)="acceptBtn(i.id,i.emp_id,i.type,i.from_date,i.to_date)" class="btn btn-sm btn-success me-2 rounded">Accept</button>
+                            <button (click)="rejectBtn(i.id)" class="btn btn-sm btn-danger rounded">Reject</button></td>
                     </tr>
                 </tbody>
             </table>

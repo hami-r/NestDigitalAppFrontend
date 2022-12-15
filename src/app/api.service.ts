@@ -95,4 +95,13 @@ export class ApiService {
   EntryVisLogs = (sendData:any) => {
     return this.http.post("http://localhost:8080/addVisitorLogs",sendData)
   }
+
+  rejectLeave = (sendData:any) => {
+    return this.http.post("http://localhost:8080/rejectLeave",sendData)
+  }
+  
+  acceptLeave = (sendData:any) => {
+    return this.http.post("http://localhost:8080/acceptLeave",sendData)
+  }
+
 }
