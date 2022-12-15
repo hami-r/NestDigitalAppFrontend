@@ -25,6 +25,7 @@ import { ViewProfileSecGuardComponent } from './view-profile-sec-guard/view-prof
 import { EmpApplyLeaveComponent } from './emp-apply-leave/emp-apply-leave.component';
 import { ViewEmpLeavComponent } from './view-emp-leav/view-emp-leav.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
+import { SecGuardNavbarComponent } from './sec-guard-navbar/sec-guard-navbar.component';
 
 let myRoutes:Routes = [
   {
@@ -115,7 +116,8 @@ let myRoutes:Routes = [
     ViewProfileSecGuardComponent,
     EmpApplyLeaveComponent,
     ViewEmpLeavComponent,
-    EmployeeNavbarComponent
+    EmployeeNavbarComponent,
+    SecGuardNavbarComponent
   ],
   imports: [
     BrowserModule,
